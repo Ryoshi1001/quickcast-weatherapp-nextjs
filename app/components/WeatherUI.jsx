@@ -109,7 +109,7 @@ const WeatherUI = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-8 app-background text-[#fff] max-w-4xl w-full min-h-[400px] h-auto p-8 rounded-lg">
+      <div className="flex flex-col app-background text-[#fff] sm:max-w-4xl w-full sm:min-h-[400px] p-8 rounded-lg ">
         <div>
           <div className="flex flex-row items-center justify-center gap-2">
             <TiWeatherWindyCloudy size={38} color="#FFCD00" />
@@ -121,14 +121,14 @@ const WeatherUI = () => {
           </p>
         </div>
 
-        <div className="flex flex-row justify-center gap-3 mx-auto items-center w-full sm:w-4/5 md:w-3/5">
-          <div className="flex items-center w-full">
+        <div className="flex flex-col sm:flex sm:flex-row sm:justify-center py-4 mb-1 gap-4 mx-auto items-center w-full sm:w-4/5 md:w-3/5">
+          <div className="flex-col flex gap-2 text-center sm:flex sm:items-center w-full">
             <label className="text-nowrap font-semibold" htmlFor="city">
               Enter City
             </label>
 
             <input
-              className="p-2 outline-none ml-3 rounded-md text-[#000] flex-grow font-roboto"
+              className="p-2 w-full outline-none sm:ml-3 rounded-md text-[#000] flex-grow font-roboto"
               value={searchCity}
               onChange={(e) => setSearchCity(e.target.value)}
               type="text"
@@ -142,14 +142,14 @@ const WeatherUI = () => {
           </div>
 
           <button
-            className="bg-[#FFCD00] text-nowrap self-center p-2 rounded-lg text-[#19014E] font-bold  hover:bg-[#e6b700] transition-colors ease-in-out"
+            className="bg-[#FFCD00] w-full text-nowrap self-center py-2 px-4 rounded-lg text-[#19014E] font-bold  hover:bg-[#e6b700] transition-colors ease-in-out"
             onClick={weather}
           >
             Get Weather
           </button>
         </div>
         {error && (
-          <div className="flex items-center justify-center text-[#FF6B6B] text-center gap-1 font-roboto">
+          <div className="flex items-center justify-center text-[#FF6B6B] text-center gap-1 font-roboto mb-3">
             {error}
             <MdError size={20} />
           </div>

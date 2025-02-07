@@ -5,18 +5,9 @@ import backgroundImage from '../public/weatherbg.jpg'
 export default function Home() {
   return (
    <>
-   <section className="flex items-center justify-center w-full h-screen p-4"
-   style={{
-    backgroundImage:`url(${backgroundImage.src})`, 
-    width: "100vw", 
-    height: "100vh", 
-    backgroundSize: "cover", 
-    backgroundPosition: 'center', 
-    backgroundRepeat: 'no-repeat', 
-    display: 'flex', 
-    alignItems: 'center', 
-    justifyContent: 'center'
-   }}
+   <section 
+   className="w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center px-4 py-20"
+   style={{backgroundImage: "url('/weatherbg.jpg')"}}
    >
     <WeatherUI/>
    </section>
