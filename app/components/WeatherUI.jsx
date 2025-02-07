@@ -43,12 +43,6 @@ const WeatherUI = () => {
         `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${searchCity}`
       );
 
-      if (!response.ok) {
-        throw new Error(
-          `API Error (check apiKey or syntax): status: ${response.status}`
-        );
-      }
-
       const data = await response.json();
 
       if (data.error) {
