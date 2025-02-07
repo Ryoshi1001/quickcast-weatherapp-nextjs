@@ -122,7 +122,7 @@ const WeatherUI = () => {
         </div>
 
         <div className="flex flex-col sm:flex sm:flex-row sm:justify-center py-4 mb-1 gap-4 mx-auto items-center w-full sm:w-4/5 md:w-3/5">
-          <div className="flex-col flex gap-2 text-center sm:flex sm:items-center w-full">
+          <div className="flex-col flex gap-2 text-center sm:flex sm:flex-row sm:items-center w-full">
             <label className="text-nowrap font-semibold" htmlFor="city">
               Enter City
             </label>
@@ -142,7 +142,7 @@ const WeatherUI = () => {
           </div>
 
           <button
-            className="bg-[#FFCD00] w-full text-nowrap self-center py-2 px-4 rounded-lg text-[#19014E] font-bold  hover:bg-[#e6b700] transition-colors ease-in-out"
+            className="bg-[#FFCD00] w-full sm:w-fit text-nowrap self-center py-2 px-4 rounded-lg text-[#19014E] font-bold  hover:bg-[#e6b700] transition-colors ease-in-out"
             onClick={weather}
           >
             Get Weather
@@ -162,13 +162,31 @@ const WeatherUI = () => {
               <FaThermometerHalf size={24} color="#FFCD00" />
             </div>
 
-            <div className="flex flex-col gap-1 py-1 font-roboto ">
-              <p>Temperature: {temperature}&#8457; </p>
-              <p>Wind Speed: {windSpeed}mph</p>
-              <p>Humidity: {humidity}</p>
-              <p>Visibility: {visibility} miles</p>
-              <p>Wind Direction: {windDirection}</p>
-              <p>Wind Gust: {windGust}mph</p>
+            <div className="flex flex-col gap-1 py-1 font-roboto  ">
+              <div className='flex flex-row justify-between'>
+                <p>Temperature &#8457; </p>
+                {temperature}
+              </div>
+              <div className='flex flex-row justify-between'>
+                <p>WindSpeed</p>
+                {windSpeed ? `${windSpeed} mph ` : ''}
+              </div>
+              <div className='flex flex-row justify-between'>
+                <p>Humidity</p>
+                {humidity}
+              </div>
+              <div className='flex flex-row justify-between'>
+                <p>Visibility</p>
+                {visibility}
+              </div>
+              <div className='flex flex-row justify-between'>
+                <p>Wind Direction</p>
+                {windDirection}
+              </div>
+              <div className='flex flex-row justify-between'>
+                <p>Wind Gust</p>
+                {windGust}
+              </div>
             </div>
           </div>
 
@@ -188,7 +206,7 @@ const WeatherUI = () => {
                       alt="weather drawing"
                     />
                     <div className="font-bold text-3xl">
-                      {temperature}&#8457;
+                      {temperature} &#8457;
                     </div>
                     <p>{imgDescription}</p>
                   </div>
@@ -207,13 +225,41 @@ const WeatherUI = () => {
               <FaLocationDot size={24} color="#FFCD00" />
             </div>
 
-            <div className="flex flex-col gap-1 py-1 font-roboto">
+            <div className="hidden sm:block flex flex-col gap-1 py-1 font-roboto">
               <h3>City: {cityName}</h3>
               <p>Region: {region}</p>
               <h3>Country: {country}</h3>
               <p>TimeZone: {timezone}</p>
               <h3>Longitude: {longitude}</h3>
               <h3>Latitude: {latitude}</h3>
+            </div>
+
+
+            <div className="sm:hidden flex flex-col gap-1 py-1 font-roboto">
+              <div className='flex flex-row justify-between'>
+                <p>City</p>
+                {cityName}
+              </div>
+              <div className='flex flex-row justify-between'>
+                <p>Region</p>
+                {region}
+              </div>
+              <div className='flex flex-row justify-between'>
+                <p>Country</p>
+                {country}
+              </div>
+              <div className='flex flex-row justify-between'>
+                <p>Time Zone</p>
+                {timezone}
+              </div>
+              <div className='flex flex-row justify-between'>
+                <p>Longitude</p>
+                {longitude}
+              </div>
+              <div className='flex flex-row justify-between'>
+                <p>Latitude</p>
+                {latitude}
+              </div>
             </div>
           </div>
         </div>
