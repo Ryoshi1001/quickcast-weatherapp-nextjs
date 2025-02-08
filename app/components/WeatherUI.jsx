@@ -109,7 +109,7 @@ const WeatherUI = () => {
 
   return (
     <>
-      <div className="flex flex-col app-background text-[#fff] sm:max-w-4xl w-full sm:min-h-[400px] p-8 rounded-lg ">
+      <div className="flex flex-col app-background text-[#fff] sm:max-w-4xl w-full sm:min-h-[400px] p-4 sm:p-8 rounded-lg ">
         <div>
           <div className="flex flex-row items-center justify-center gap-2">
             <TiWeatherWindyCloudy size={38} color="#FFCD00" />
@@ -154,6 +154,9 @@ const WeatherUI = () => {
             <MdError size={20} />
           </div>
         )}
+        <div className="pb-4 sm:hidden">
+          <h3 className="text-center font-roboto">{localTime}</h3>
+        </div>
 
         <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8">
           <div>
@@ -163,27 +166,27 @@ const WeatherUI = () => {
             </div>
 
             <div className="flex flex-col gap-1 py-1 font-roboto  ">
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>Temperature &#8457; </p>
                 {temperature}
               </div>
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>WindSpeed</p>
                 {windSpeed ? `${windSpeed} mph ` : ''}
               </div>
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>Humidity</p>
                 {humidity}
               </div>
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>Visibility</p>
                 {visibility}
               </div>
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>Wind Direction</p>
                 {windDirection}
               </div>
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>Wind Gust</p>
                 {windGust}
               </div>
@@ -198,7 +201,7 @@ const WeatherUI = () => {
             <div className="flex w-full h-full items-start justify-center">
               {icon ? (
                 <>
-                  <div className="flex flex-col items-center justify-center font-roboto">
+                  <div className="flex flex-col items-center justify-center font-roboto pt-2 sm:pt-0">
                     <Image
                       width={120}
                       height={120}
@@ -234,36 +237,37 @@ const WeatherUI = () => {
               <h3>Latitude: {latitude}</h3>
             </div>
 
-
             <div className="sm:hidden flex flex-col gap-1 py-1 font-roboto">
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>City</p>
                 {cityName}
               </div>
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>Region</p>
                 {region}
               </div>
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>Country</p>
                 {country}
               </div>
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>Time Zone</p>
                 {timezone}
               </div>
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>Longitude</p>
                 {longitude}
               </div>
-              <div className='flex flex-row justify-between'>
+              <div className="flex flex-row justify-between">
                 <p>Latitude</p>
                 {latitude}
               </div>
             </div>
           </div>
         </div>
-        <h3 className="text-center font-roboto">{localTime}</h3>
+        <div className="pt-4 hidden sm:block">
+          <h3 className="text-center font-roboto">{localTime}</h3>
+        </div>
       </div>
     </>
   );
