@@ -109,7 +109,7 @@ const WeatherUI = () => {
 
   return (
     <>
-      <div className="flex flex-col app-background text-[#fff] sm:max-w-4xl w-full sm:min-h-[400px] p-4 sm:p-8 rounded-lg ">
+      <div className="flex flex-col app-background text-[#fff] sm:max-w-4xl w-full sm:min-h-[400px] p-4 sm:p-8 rounded-lg shadow-xl">
         <div>
           <div className="flex flex-row items-center justify-center gap-2">
             <TiWeatherWindyCloudy size={38} color="#FFCD00" />
