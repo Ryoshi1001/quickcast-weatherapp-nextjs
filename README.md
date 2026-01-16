@@ -188,18 +188,6 @@ Can also be deployed on any platform supporting Next.js (Netlify, Railway, etc.)
 
 ---
 
-## 🎯 Future Enhancements
-
-- [ ] 7-day weather forecast
-- [ ] Hourly predictions
-- [ ] Weather alerts and warnings
-- [ ] Favorite cities list
-- [ ] Temperature unit toggle (°F/°C)
-- [ ] Weather maps integration
-- [ ] Historical weather data
-
----
-
 ## 📄 License
 
 MIT — Free to use and modify.
@@ -208,10 +196,6 @@ MIT — Free to use and modify.
 
 ## 🤝 Contact
 
-Built by [Your Name]
+Built by ME
 
-- Portfolio: [your-portfolio.com]
-- GitHub: [@your-username]
-- Email: your-email@example.com
-
-**Thanks for checking out QuickCast! Stay weather-aware. 🌤️**
+**Kind of you for checking out QuickCast!🌤️**
