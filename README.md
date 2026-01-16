@@ -4,7 +4,6 @@ Your Instant Weather Update
 
 QuickCast is a modern, responsive weather application that lets users instantly check current weather conditions for any city in the world. It features a clean UI, fast responses, and detailed weather and location data in an easy-to-read layout.
 
-📸 Screenshots
 ## 📸 Screenshot
 <img src="public/screenshots/Quickcast.webp" width="800" />
 
