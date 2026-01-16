@@ -4,6 +4,10 @@ Your Instant Weather Update
 
 QuickCast is a modern, responsive weather application that lets users instantly check current weather conditions for any city in the world. It features a clean UI, fast responses, and detailed weather and location data in an easy-to-read layout.
 
+📸 Screenshots
+## 📸 Screenshot
+<img src="public/screenshots/Quickcast.webp" width="800" />
+
 🔗 **Live Demo:** [QuickCast Live](https://meweatherapp.vercel.app/)
 
 ✨ Features
@@ -81,12 +85,6 @@ http://localhost:3000
 📦 Deployment
 
 QuickCast is optimized for deployment on Vercel, but can be deployed on any platform that supports Next.js.
-
-📸 Screenshots
-
-## 📸 Screenshot
-
-![QuickCast Weather App](https://github.com/Ryoshi1001/quickcast-weatherapp-nextjs/blob/main/public/screenshots/Quickcast.webp)
 
 🧠 Notes
 
