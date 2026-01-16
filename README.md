@@ -86,7 +86,7 @@ QuickCast is optimized for deployment on Vercel, but can be deployed on any plat
 
 ## 📸 Screenshot
 
-![QuickCast Weather App](screenshots/Quickcast.webp)
+![QuickCast Weather App](https://github.com/Ryoshi1001/quickcast-weatherapp-nextjs/blob/main/public/screenshots/Quickcast.webp)
 
 🧠 Notes
 
